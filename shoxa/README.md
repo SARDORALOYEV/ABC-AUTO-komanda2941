@@ -25,6 +25,15 @@ Bu sahifalarga kirib o'z komponentlaringizni ko'rish uchun:
 | 3 | Family Car | http://localhost:5173/family-car |
 | 4 | First Car | http://localhost:5173/first-car |
 
+## Headerdan qanday topasiz (Navigatsiya)
+
+| Sahifangiz | Headerda nima bosasiz |
+|-----------|----------------------|
+| Collections (`/collections`) | **КОЛЛЕКЦИИ** ni bosing |
+| Collection Detail (`/collections/1`) | **КОЛЛЕКЦИИ** → ochilgan sahifada birinchi kolleksiyani bosing |
+| Family Car (`/family-car`) | **СПЕЦПРЕДЛОЖЕНИЯ** ustiga hover → dropdown dan **Семейный автомобиль** |
+| First Car (`/first-car`) | **СПЕЦПРЕДЛОЖЕНИЯ** ustiga hover → dropdown dan **Первый автомобиль** |
+
 ## Yo'riqnoma
 1. `npm run dev` terminalda ishga tushiring
 2. Brauzerda http://localhost:5173/collections ni oching

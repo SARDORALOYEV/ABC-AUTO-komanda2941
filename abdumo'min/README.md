@@ -25,6 +25,15 @@ Bu sahifalarga kirib o'z komponentlaringizni ko'rish uchun:
 | 3 | Recycling | http://localhost:5173/recycling |
 | 4 | Credit Installment | http://localhost:5173/credit-installment |
 
+## Headerdan qanday topasiz (Navigatsiya)
+
+| Sahifangiz | Headerda nima bosasiz |
+|-----------|----------------------|
+| Trade-In (`/trade-in`) | **TRADE-IN** ni bosing |
+| Medical Workers (`/medical-workers`) | **СПЕЦПРЕДЛОЖЕНИЯ** ustiga hover → dropdown dan **Медицинским работникам** |
+| Recycling (`/recycling`) | **СПЕЦПРЕДЛОЖЕНИЯ** ustiga hover → dropdown dan **Утилизация** |
+| Credit Installment (`/credit-installment`) | **КРЕДИТ И РАССРОЧКА** ustiga bosish yoki dropdown dan **Кредит и рассрочка** |
+
 ## Yo'riqnoma
 1. `npm run dev` terminalda ishga tushiring
 2. Brauzerda http://localhost:5173/trade-in ni oching

@@ -27,8 +27,19 @@ Bu sahifalarga kirib o'z komponentlaringizni ko'rish uchun:
 
 **MUHIM:** Sizning `Navbar.jsx` komponentingiz **barcha sahifalarning yuqori qismida** ko'rinadi!
 
+## Headerdan qanday topasiz (Navigatsiya)
+
+| Sahifangiz | Headerda nima bosasiz |
+|-----------|----------------------|
+| Home (`/`) | **ABC AUTO** logotipini bosing |
+| Catalog (`/catalog`) | **КАТАЛОГ АВТО** → ustiga bosish yoki yuqorida **Подбор авто** |
+| Brand (`/brand`) | **КАТАЛОГ АВТО** ustiga hover → dropdown dan **Бренды** |
+| Model (`/model`) | **КАТАЛОГ АВТО** ustiga hover → dropdown dan **Модели** |
+
 ## Yo'riqnoma
 1. `npm run dev` terminalda ishga tushiring
 2. Brauzerda http://localhost:5173/ ni oching
 3. O'z komponentlaringizni `sharipov/` papkasidagi fayllarda tahrirlang
 4. O'zgarishlarni ko'rish uchun sahifani qayta yuklang
+
+**MUHIM:** Sizning `Navbar.jsx` komponentingiz barcha sahifalarning yuqori qismida ko'rinadi!

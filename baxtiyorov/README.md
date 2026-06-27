@@ -20,6 +20,12 @@ Bu sahifalarga kirib o'z komponentlaringizni ko'rish uchun:
 |---|--------|--------------------------|
 | 1 | 404 Error (noto'g'ri URL yozilsa) | http://localhost:5173/test-xato |
 
+## Headerdan qanday topasiz (Navigatsiya)
+
+| Sahifangiz | Headerda nima bosasiz |
+|-----------|----------------------|
+| 404 Error (`/*`) | Headerda yo'q. Brauzerga `localhost:5173/test-xato` deb yozing (noto'g'ri URL) |
+
 ## Yo'riqnoma
 1. `npm run dev` terminalda ishga tushiring
 2. Brauzerda http://localhost:5173/test-xato ni oching (bu noto'g'ri URL, 404 chiqadi)

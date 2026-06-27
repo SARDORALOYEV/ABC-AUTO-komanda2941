@@ -112,50 +112,102 @@ const Navbar = () => {
       <div className="hidden xl:block bg-white px-4 md:px-8 border-t border-gray-100">
         <div className="flex items-center justify-between max-w-7xl mx-auto h-11">
           <nav className="flex items-center gap-6">
-            <Link to="/catalog" className="flex items-center gap-1 text-slate-950 font-bold text-xs tracking-wide">
-              КАТАЛОГ АВТО
-              <svg className="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </Link>
-            <Link to="/used-cars" className="flex items-center gap-1 text-slate-950 font-bold text-xs tracking-wide">
+            {/* КАТАЛОГ ДРОПДАУН */}
+            <div className="relative group">
+              <Link to="/catalog" className="flex items-center gap-1 text-slate-950 font-bold text-xs tracking-wide py-3">
+                КАТАЛОГ АВТО
+                <svg className="w-3 h-3 text-gray-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </Link>
+              <div className="absolute top-full left-0 bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <Link to="/brand" className="block px-4 py-2 text-xs text-slate-700 hover:bg-gray-50 hover:text-red-600 transition">Бренды</Link>
+                <Link to="/model" className="block px-4 py-2 text-xs text-slate-700 hover:bg-gray-50 hover:text-red-600 transition">Модели</Link>
+                <Link to="/trim" className="block px-4 py-2 text-xs text-slate-700 hover:bg-gray-50 hover:text-red-600 transition">Комплектации</Link>
+                <div className="border-t border-gray-100 my-1" />
+                <Link to="/car-selection-new" className="block px-4 py-2 text-xs text-slate-700 hover:bg-gray-50 hover:text-red-600 transition">Подбор нового авто</Link>
+                <Link to="/car-selection-used" className="block px-4 py-2 text-xs text-slate-700 hover:bg-gray-50 hover:text-red-600 transition">Подбор авто с пробегом</Link>
+              </div>
+            </div>
+
+            <Link to="/used-cars" className="text-slate-950 font-bold text-xs tracking-wide hover:text-red-600 transition py-3">
               АВТО С ПРОБЕГОМ
-              <svg className="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
             </Link>
-            <Link to="/credit-installment" className="flex items-center gap-1 text-slate-950 font-bold text-xs tracking-wide">
-              КРЕДИТ И РАССРОЧКА
-              <svg className="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
+
+            <Link to="/collections" className="text-slate-950 font-bold text-xs tracking-wide hover:text-red-600 transition py-3">
+              КОЛЛЕКЦИИ
             </Link>
-            <Link to="/special-offers" className="flex items-center gap-1 text-slate-950 font-bold text-xs tracking-wide">
-              СПЕЦПРЕДЛОЖЕНИЯ
-              <svg className="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
+
+            {/* КРЕДИТ ДРОПДАУН */}
+            <div className="relative group">
+              <Link to="/credit-installment" className="flex items-center gap-1 text-slate-950 font-bold text-xs tracking-wide py-3">
+                КРЕДИТ И РАССРОЧКА
+                <svg className="w-3 h-3 text-gray-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </Link>
+              <div className="absolute top-full left-0 bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <Link to="/credit-installment" className="block px-4 py-2 text-xs text-slate-700 hover:bg-gray-50 hover:text-red-600 transition">Кредит и рассрочка</Link>
+                <Link to="/express-credit" className="block px-4 py-2 text-xs text-slate-700 hover:bg-gray-50 hover:text-red-600 transition">Экспресс-кредит</Link>
+                <Link to="/installment" className="block px-4 py-2 text-xs text-slate-700 hover:bg-gray-50 hover:text-red-600 transition">Рассрочка</Link>
+                <Link to="/model-credit" className="block px-4 py-2 text-xs text-slate-700 hover:bg-gray-50 hover:text-red-600 transition">Кредит на модель</Link>
+              </div>
+            </div>
+
+            {/* СПЕЦПРЕДЛОЖЕНИЯ ДРОПДАУН */}
+            <div className="relative group">
+              <Link to="/family-car" className="flex items-center gap-1 text-slate-950 font-bold text-xs tracking-wide py-3">
+                СПЕЦПРЕДЛОЖЕНИЯ
+                <svg className="w-3 h-3 text-gray-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </Link>
+              <div className="absolute top-full left-0 bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <Link to="/family-car" className="block px-4 py-2 text-xs text-slate-700 hover:bg-gray-50 hover:text-red-600 transition">Семейный автомобиль</Link>
+                <Link to="/first-car" className="block px-4 py-2 text-xs text-slate-700 hover:bg-gray-50 hover:text-red-600 transition">Первый автомобиль</Link>
+                <Link to="/medical-workers" className="block px-4 py-2 text-xs text-slate-700 hover:bg-gray-50 hover:text-red-600 transition">Медицинским работникам</Link>
+                <Link to="/recycling" className="block px-4 py-2 text-xs text-slate-700 hover:bg-gray-50 hover:text-red-600 transition">Утилизация</Link>
+              </div>
+            </div>
+
+            <Link to="/trade-in" className="text-slate-950 font-bold text-xs tracking-wide hover:text-red-600 transition py-3">
+              TRADE-IN
             </Link>
-            <Link to="/taxi-credit" className="text-slate-950 font-bold text-xs tracking-wide">
+
+            <Link to="/taxi-credit" className="text-slate-950 font-bold text-xs tracking-wide hover:text-red-600 transition py-3">
               ТАКСИ В КРЕДИТ
+            </Link>
+
+            <Link to="/insurance" className="text-slate-950 font-bold text-xs tracking-wide hover:text-red-600 transition py-3">
+              СТРАХОВАНИЕ
+            </Link>
+
+            <Link to="/blog" className="text-slate-950 font-bold text-xs tracking-wide hover:text-red-600 transition py-3">
+              БЛОГ
             </Link>
           </nav>
 
           {/* Utility Icons */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
+            <div className="relative group">
+              <Link to="/comparison-new" className="relative block">
+                <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+                <span className="absolute -top-1.5 -right-1.5 bg-red-600 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">12</span>
+              </Link>
+              <div className="absolute top-full right-0 bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-[180px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 mt-2">
+                <Link to="/comparison-new" className="block px-4 py-2 text-xs text-slate-700 hover:bg-gray-50 hover:text-red-600 transition">Сравнение новых</Link>
+                <Link to="/comparison-taxi" className="block px-4 py-2 text-xs text-slate-700 hover:bg-gray-50 hover:text-red-600 transition">Сравнение такси</Link>
+              </div>
+            </div>
             <Link to="/favorites" className="relative">
               <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
               </svg>
               <span className="absolute -top-1.5 -right-1.5 bg-red-600 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">10</span>
             </Link>
-            <Link to="/comparison-new" className="relative">
-              <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-              </svg>
-              <span className="absolute -top-1.5 -right-1.5 bg-red-600 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">12</span>
-            </Link>
-            <button>
+            <button type="button">
               <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>

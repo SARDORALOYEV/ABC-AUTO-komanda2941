@@ -23,6 +23,14 @@ Bu sahifalarga kirib o'z komponentlaringizni ko'rish uchun:
 | 2 | Reviews | http://localhost:5173/reviews |
 | 3 | Review Detail | http://localhost:5173/reviews/1 |
 
+## Headerdan qanday topasiz (Navigatsiya)
+
+| Sahifangiz | Headerda nima bosasiz |
+|-----------|----------------------|
+| Car Selection Used (`/car-selection-used`) | **КАТАЛОГ АВТО** ustiga hover → dropdown dan **Подбор авто с пробегом** |
+| Reviews (`/reviews`) | Yuqorida **Отзывы** linkini bosing |
+| Review Detail (`/reviews/1`) | **Отзывы** → ochilgan sahifada birinchi sharhni bosing |
+
 ## Yo'riqnoma
 1. `npm run dev` terminalda ishga tushiring
 2. Brauzerda http://localhost:5173/car-selection-used ni oching

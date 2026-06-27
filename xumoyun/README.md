@@ -25,6 +25,15 @@ Bu sahifalarga kirib o'z komponentlaringizni ko'rish uchun:
 | 3 | Used Car Detail | http://localhost:5173/used-cars/1 |
 | 4 | Favorites | http://localhost:5173/favorites |
 
+## Headerdan qanday topasiz (Navigatsiya)
+
+| Sahifangiz | Headerda nima bosasiz |
+|-----------|----------------------|
+| Trim (`/trim`) | **КАТАЛОГ АВТО** ustiga hover → dropdown dan **Комплектации** |
+| Used Cars (`/used-cars`) | **АВТО С ПРОБЕГОМ** ni bosing |
+| Used Car Detail (`/used-cars/1`) | **АВТО С ПРОБЕГОМ** → ochilgan sahifada birinchi e'lonni bosing |
+| Favorites (`/favorites`) | Yuqori o'ngda ❤️ **иконка**ни bosing |
+
 ## Yo'riqnoma
 1. `npm run dev` terminalda ishga tushiring
 2. Brauzerda http://localhost:5173/trim ni oching

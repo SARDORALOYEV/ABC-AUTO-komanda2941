@@ -23,6 +23,14 @@ Bu sahifalarga kirib o'z komponentlaringizni ko'rish uchun:
 | 2 | Contacts | http://localhost:5173/contacts |
 | 3 | Car Selection New | http://localhost:5173/car-selection-new |
 
+## Headerdan qanday topasiz (Navigatsiya)
+
+| Sahifangiz | Headerda nima bosasiz |
+|-----------|----------------------|
+| Service Center (`/service-center`) | Yuqorida **Техцентр** linkini bosing |
+| Contacts (`/contacts`) | Yuqorida **Контакты** linkini bosing |
+| Car Selection New (`/car-selection-new`) | **КАТАЛОГ АВТО** ustiga hover → dropdown dan **Подбор нового авто** |
+
 ## Yo'riqnoma
 1. `npm run dev` terminalda ishga tushiring
 2. Brauzerda http://localhost:5173/service-center ni oching

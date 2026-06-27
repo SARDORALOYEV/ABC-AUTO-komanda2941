@@ -23,6 +23,14 @@ Bu sahifalarga kirib o'z komponentlaringizni ko'rish uchun:
 | 2 | Insurance | http://localhost:5173/insurance |
 | 3 | About | http://localhost:5173/about |
 
+## Headerdan qanday topasiz (Navigatsiya)
+
+| Sahifangiz | Headerda nima bosasiz |
+|-----------|----------------------|
+| Model Credit (`/model-credit`) | **КРЕДИТ И РАССРОЧКА** ustiga hover → dropdown dan **Кредит на модель** |
+| Insurance (`/insurance`) | **СТРАХОВАНИЕ** ni bosing |
+| About (`/about`) | Yuqorida **О компании** linkini bosing |
+
 ## Yo'riqnoma
 1. `npm run dev` terminalda ishga tushiring
 2. Brauzerda http://localhost:5173/model-credit ni oching

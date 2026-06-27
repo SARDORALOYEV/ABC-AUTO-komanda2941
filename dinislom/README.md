@@ -21,6 +21,13 @@ Bu sahifalarga kirib o'z komponentlaringizni ko'rish uchun:
 | 1 | Comparison New | http://localhost:5173/comparison-new |
 | 2 | Comparison Taxi | http://localhost:5173/comparison-taxi |
 
+## Headerdan qanday topasiz (Navigatsiya)
+
+| Sahifangiz | Headerda nima bosasiz |
+|-----------|----------------------|
+| Comparison New (`/comparison-new`) | O'ngdagi 📊 **иконка** ustiga hover → **Сравнение новых** |
+| Comparison Taxi (`/comparison-taxi`) | O'ngdagi 📊 **иконка** ustiga hover → **Сравнение такси** |
+
 ## Yo'riqnoma
 1. `npm run dev` terminalda ishga tushiring
 2. Brauzerda http://localhost:5173/comparison-new ni oching

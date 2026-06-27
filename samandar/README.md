@@ -25,6 +25,15 @@ Bu sahifalarga kirib o'z komponentlaringizni ko'rish uchun:
 | 3 | Taxi Credit | http://localhost:5173/taxi-credit |
 | 4 | Taxi Credit Detail | http://localhost:5173/taxi-credit/1 |
 
+## Headerdan qanday topasiz (Navigatsiya)
+
+| Sahifangiz | Headerda nima bosasiz |
+|-----------|----------------------|
+| Express Credit (`/express-credit`) | **КРЕДИТ И РАССРОЧКА** ustiga hover → dropdown dan **Экспресс-кредит** |
+| Installment (`/installment`) | **КРЕДИТ И РАССРОЧКА** ustiga hover → dropdown dan **Рассрочка** |
+| Taxi Credit (`/taxi-credit`) | **ТАКСИ В КРЕДИТ** ni bosing |
+| Taxi Credit Detail (`/taxi-credit/1`) | **ТАКСИ В КРЕДИТ** → ochilgan sahifada birinchi e'lonni bosing |
+
 ## Yo'riqnoma
 1. `npm run dev` terminalda ishga tushiring
 2. Brauzerda http://localhost:5173/express-credit ni oching

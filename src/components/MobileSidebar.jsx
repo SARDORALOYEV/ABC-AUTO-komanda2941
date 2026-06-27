@@ -90,11 +90,53 @@ const MobileSidebar = ({ isOpen, onClose }) => {
               КАТАЛОГ АВТО
             </Link>
             <Link
+              to="/brand"
+              onClick={onClose}
+              className="block px-3 py-2 rounded-lg text-slate-600 text-xs hover:bg-gray-50 transition-colors ml-4"
+            >
+              Бренды
+            </Link>
+            <Link
+              to="/model"
+              onClick={onClose}
+              className="block px-3 py-2 rounded-lg text-slate-600 text-xs hover:bg-gray-50 transition-colors ml-4"
+            >
+              Модели
+            </Link>
+            <Link
+              to="/trim"
+              onClick={onClose}
+              className="block px-3 py-2 rounded-lg text-slate-600 text-xs hover:bg-gray-50 transition-colors ml-4"
+            >
+              Комплектации
+            </Link>
+            <Link
+              to="/car-selection-new"
+              onClick={onClose}
+              className="block px-3 py-2 rounded-lg text-slate-600 text-xs hover:bg-gray-50 transition-colors ml-4"
+            >
+              Подбор нового авто
+            </Link>
+            <Link
+              to="/car-selection-used"
+              onClick={onClose}
+              className="block px-3 py-2 rounded-lg text-slate-600 text-xs hover:bg-gray-50 transition-colors ml-4"
+            >
+              Подбор авто с пробегом
+            </Link>
+            <Link
               to="/used-cars"
               onClick={onClose}
               className="block px-3 py-2.5 rounded-lg text-slate-900 font-bold text-sm hover:bg-gray-100 transition-colors"
             >
               АВТО С ПРОБЕГОМ
+            </Link>
+            <Link
+              to="/collections"
+              onClick={onClose}
+              className="block px-3 py-2.5 rounded-lg text-slate-900 font-bold text-sm hover:bg-gray-100 transition-colors"
+            >
+              КОЛЛЕКЦИИ
             </Link>
             <Link
               to="/credit-installment"
@@ -104,11 +146,60 @@ const MobileSidebar = ({ isOpen, onClose }) => {
               КРЕДИТ И РАССРОЧКА
             </Link>
             <Link
-              to="/special-offers"
+              to="/express-credit"
+              onClick={onClose}
+              className="block px-3 py-2 rounded-lg text-slate-600 text-xs hover:bg-gray-50 transition-colors ml-4"
+            >
+              Экспресс-кредит
+            </Link>
+            <Link
+              to="/installment"
+              onClick={onClose}
+              className="block px-3 py-2 rounded-lg text-slate-600 text-xs hover:bg-gray-50 transition-colors ml-4"
+            >
+              Рассрочка
+            </Link>
+            <Link
+              to="/model-credit"
+              onClick={onClose}
+              className="block px-3 py-2 rounded-lg text-slate-600 text-xs hover:bg-gray-50 transition-colors ml-4"
+            >
+              Кредит на модель
+            </Link>
+            <Link
+              to="/trade-in"
+              onClick={onClose}
+              className="block px-3 py-2.5 rounded-lg text-slate-900 font-bold text-sm hover:bg-gray-100 transition-colors"
+            >
+              TRADE-IN
+            </Link>
+            <Link
+              to="/family-car"
               onClick={onClose}
               className="block px-3 py-2.5 rounded-lg text-slate-900 font-bold text-sm hover:bg-gray-100 transition-colors"
             >
               СПЕЦПРЕДЛОЖЕНИЯ
+            </Link>
+            <Link
+              to="/first-car"
+              onClick={onClose}
+              className="block px-3 py-2 rounded-lg text-slate-600 text-xs hover:bg-gray-50 transition-colors ml-4"
+            >
+              Первый автомобиль
+            </Link>
+            <Link
+              to="/medical-workers"
+              onClick={onClose}
+              className="block px-3 py-2 rounded-lg text-slate-600 text-xs hover:bg-gray-50 transition-colors ml-4"
+            >
+              Медицинским работникам
+            </Link>
+            <Link
+              to="/recycling"
+              onClick={onClose}
+              className="block px-3 py-2 rounded-lg text-slate-600 text-xs hover:bg-gray-50 transition-colors ml-4"
+            >
+              Утилизация
             </Link>
             <Link
               to="/taxi-credit"
@@ -116,6 +207,34 @@ const MobileSidebar = ({ isOpen, onClose }) => {
               className="block px-3 py-2.5 rounded-lg text-slate-900 font-bold text-sm hover:bg-gray-100 transition-colors"
             >
               ТАКСИ В КРЕДИТ
+            </Link>
+            <Link
+              to="/insurance"
+              onClick={onClose}
+              className="block px-3 py-2.5 rounded-lg text-slate-900 font-bold text-sm hover:bg-gray-100 transition-colors"
+            >
+              СТРАХОВАНИЕ
+            </Link>
+            <Link
+              to="/blog"
+              onClick={onClose}
+              className="block px-3 py-2.5 rounded-lg text-slate-900 font-bold text-sm hover:bg-gray-100 transition-colors"
+            >
+              БЛОГ
+            </Link>
+            <Link
+              to="/comparison-new"
+              onClick={onClose}
+              className="block px-3 py-2.5 rounded-lg text-slate-900 font-bold text-sm hover:bg-gray-100 transition-colors"
+            >
+              СРАВНЕНИЕ НОВЫХ
+            </Link>
+            <Link
+              to="/comparison-taxi"
+              onClick={onClose}
+              className="block px-3 py-2.5 rounded-lg text-slate-900 font-bold text-sm hover:bg-gray-100 transition-colors"
+            >
+              СРАВНЕНИЕ ТАКСИ
             </Link>
           </nav>
         </div>
