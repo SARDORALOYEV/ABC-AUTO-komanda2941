@@ -1,11 +1,32 @@
-# Abdumo'min — Reyting: 7/10
+# Abdumo'min
 
-## Biriktirilgan komponentlar (3 ta)
+## Sizning komponentlaringiz
 
-| # | Komponent | Manba papka | Murakkablik |
-|---|-----------|-------------|:-----------:|
-| 1 | `ImageUploadZone.jsx` | `asadbek/` | 7/10 |
-| 2 | `ContactForm.jsx` | `baxrom/` | 7/10 |
-| 3 | `PricingAndSubmitForm.jsx` | `asadbek/` | 6/10 |
+| # | Komponent | Fayl yo'li (qayerda kod yozasiz) |
+|---|-----------|----------------------------------|
+| 1 | `ImageUploadZone.jsx` | `abdumo'min/ImageUploadZone.jsx` |
+| 2 | `ContactForm.jsx` | `abdumo'min/ContactForm.jsx` |
+| 3 | `PricingAndSubmitForm.jsx` | `abdumo'min/PricingAndSubmitForm.jsx` |
 
-**MUHIM:** Faqat Tailwind CSS klasslari orqali UI dizaynni 1:1 chiqaring. Hech qanday JavaScript kodi, `useState` hooklari yoki dynamic funksiyalar yozilmasin.
+### Qanday kod yozish kerak?
+- Faylni oching: `abdumo'min/ImageUploadZone.jsx` (yoki boshqa komponent)
+- Ichidagi JSX kodni Tailwind CSS klasslari bilan yozing
+- `useState`, `useEffect` kabi React hooklaridan foydalanish MUMKIN
+- Faqat UI dizaynni chiroyli qiling
+
+## Sizning sahifalaringiz
+
+Bu sahifalarga kirib o'z komponentlaringizni ko'rish uchun:
+
+| # | Sahifa | Route (brauzerga yozing) |
+|---|--------|--------------------------|
+| 1 | Trade-In | http://localhost:5173/trade-in |
+| 2 | Medical Workers | http://localhost:5173/medical-workers |
+| 3 | Recycling | http://localhost:5173/recycling |
+| 4 | Credit Installment | http://localhost:5173/credit-installment |
+
+## Yo'riqnoma
+1. `npm run dev` terminalda ishga tushiring
+2. Brauzerda http://localhost:5173/trade-in ni oching
+3. O'z komponentlaringizni `abdumo'min/` papkasidagi fayllarda tahrirlang
+4. O'zgarishlarni ko'rish uchun sahifani qayta yuklang

@@ -1,7 +1,7 @@
 const UsedCars = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-white">
-      <h1 className="text-4xl font-bold text-gray-900">Used Cars Page - Bahodir</h1>
+      <h1 className="text-4xl font-bold text-gray-900">Used Cars Page - Xumoyun</h1>
     </div>
   )
 }

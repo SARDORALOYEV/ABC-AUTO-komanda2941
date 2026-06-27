@@ -1,9 +1,28 @@
-# Mushtariy — Reyting: 3/10
+# Mushtariy
 
-## Biriktirilgan komponentlar (1 ta)
+## Sizning komponentlaringiz
 
-| # | Komponent | Manba papka | Murakkablik |
-|---|-----------|-------------|:-----------:|
-| 1 | `Pagination.jsx` | `meyirlan/` | 3/10 |
+| # | Komponent | Fayl yo'li (qayerda kod yozasiz) |
+|---|-----------|----------------------------------|
+| 1 | `Pagination.jsx` | `mushtariy/Pagination.jsx` |
 
-**MUHIM:** Faqat Tailwind CSS klasslari orqali UI dizaynni 1:1 chiqaring. Hech qanday JavaScript kodi, `useState` hooklari yoki dynamic funksiyalar yozilmasin.
+### Qanday kod yozish kerak?
+- Faylni oching: `mushtariy/Pagination.jsx`
+- Ichidagi JSX kodni Tailwind CSS klasslari bilan yozing
+- `useState`, `useEffect` kabi React hooklaridan foydalanish MUMKIN
+- Faqat UI dizaynni chiroyli qiling
+
+## Sizning sahifalaringiz
+
+Bu sahifalarga kirib o'z komponentlaringizni ko'rish uchun:
+
+| # | Sahifa | Route (brauzerga yozing) |
+|---|--------|--------------------------|
+| 1 | Blog | http://localhost:5173/blog |
+| 2 | Article (Blog detail) | http://localhost:5173/blog/1 |
+
+## Yo'riqnoma
+1. `npm run dev` terminalda ishga tushiring
+2. Brauzerda http://localhost:5173/blog ni oching
+3. O'z komponentingizni `mushtariy/` papkasidagi faylda tahrirlang
+4. O'zgarishlarni ko'rish uchun sahifani qayta yuklang

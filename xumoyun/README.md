@@ -1,11 +1,32 @@
-# Xumoyun — Reyting: 8/10
+# Xumoyun
 
-## Biriktirilgan komponentlar (3 ta)
+## Sizning komponentlaringiz
 
-| # | Komponent | Manba papka | Murakkablik |
-|---|-----------|-------------|:-----------:|
-| 1 | `BlogHome.jsx` | `aziz/` | 8/10 |
-| 2 | `HeroBanner.jsx` | `xayriddin/` | 8/10 |
-| 3 | `MediaGallery.jsx` | `bahodir/` | 7/10 |
+| # | Komponent | Fayl yo'li (qayerda kod yozasiz) |
+|---|-----------|----------------------------------|
+| 1 | `BlogHome.jsx` | `xumoyun/BlogHome.jsx` |
+| 2 | `HeroBanner.jsx` | `xumoyun/HeroBanner.jsx` |
+| 3 | `MediaGallery.jsx` | `xumoyun/MediaGallery.jsx` |
 
-**MUHIM:** Faqat Tailwind CSS klasslari orqali UI dizaynni 1:1 chiqaring. Hech qanday JavaScript kodi, `useState` hooklari yoki dynamic funksiyalar yozilmasin.
+### Qanday kod yozish kerak?
+- Faylni oching: `xumoyun/BlogHome.jsx` (yoki boshqa komponent)
+- Ichidagi JSX kodni Tailwind CSS klasslari bilan yozing
+- `useState`, `useEffect` kabi React hooklaridan foydalanish MUMKIN
+- Faqat UI dizaynni chiroyli qiling
+
+## Sizning sahifalaringiz
+
+Bu sahifalarga kirib o'z komponentlaringizni ko'rish uchun:
+
+| # | Sahifa | Route (brauzerga yozing) |
+|---|--------|--------------------------|
+| 1 | Trim | http://localhost:5173/trim |
+| 2 | Used Cars | http://localhost:5173/used-cars |
+| 3 | Used Car Detail | http://localhost:5173/used-cars/1 |
+| 4 | Favorites | http://localhost:5173/favorites |
+
+## Yo'riqnoma
+1. `npm run dev` terminalda ishga tushiring
+2. Brauzerda http://localhost:5173/trim ni oching
+3. O'z komponentlaringizni `xumoyun/` papkasidagi fayllarda tahrirlang
+4. O'zgarishlarni ko'rish uchun sahifani qayta yuklang
